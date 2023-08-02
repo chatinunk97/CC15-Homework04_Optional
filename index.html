@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Additional</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            margin: 0px;
+            padding: 15px;
+            min-height: 95vh;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .card {
+            padding-top: 10px;
+            margin: 30px;
+           
+            max-width: 250px;
+            max-height: 350px;
+            
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px grey;
+        }
+
+        .card::before {
+            content: "X";
+            color: grey;
+            font-size: 25px;
+
+            /* Position relate to the card */
+            position: relative;
+            left: 15px;
+        }
+
+        .card::after {
+            content: "9";
+            /* Changing it to inline-block to adjust its vertical size */
+            display: inline-block;
+            /* Position relate to the card */
+            position: relative;
+            
+            /* Circle Sizing */
+            width: 50px;
+            height: 50px;
+            padding: 10px; 
+            border-radius: 50%;
+
+            /* Text Decolation */
+            text-align: center;
+            font-size: 40px;
+            background-color: red;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+
+            /* Positioning */
+            left: 190px;
+            top: -375px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            /* background-color: red; */
+            font-size: 25px;
+            border-top: black 1px solid;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://www.svgrepo.com/show/429787/human-man-10.svg" alt="profile">
+        <h4>A.Rudiger</h4>
+    </div>
+
+</body>
+
+</html>
